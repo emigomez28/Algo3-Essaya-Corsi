@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+
+
+<Pane fx:id="escena" prefHeight="444.0" prefWidth="654.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane>
+         <children>
+            <MenuBar fx:id="menu" prefHeight="25.0" prefWidth="654.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="Juego">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Nuevo juego" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <GridPane fx:id="ventana" layoutX="27.0" layoutY="25.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="296.0" minWidth="60.0" prefWidth="60.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="296.0" minWidth="60.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="60.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="60.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="60.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="60.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="60.0" />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints />
+               </rowConstraints>
+               <children>
+                  <HBox fx:id="filaSuperior" prefHeight="121.0" prefWidth="441.0" GridPane.columnSpan="10">
+                     <children>
+                        <StackPane fx:id="mazo" prefHeight="150.0" prefWidth="85.71" />
+                        <StackPane prefHeight="150.0" prefWidth="85.71" />
+                        <StackPane prefHeight="150.0" prefWidth="85.71" />
+                        <StackPane fx:id="base1" prefHeight="150.0" prefWidth="85.71" />
+                        <StackPane fx:id="base2" prefHeight="150.0" prefWidth="85.71" />
+                        <StackPane fx:id="base3" prefHeight="150.0" prefWidth="85.71" />
+                        <StackPane fx:id="base4" prefHeight="150.0" prefWidth="85.71" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="filaInferior" prefHeight="296.0" prefWidth="600.0" GridPane.columnSpan="10" GridPane.rowIndex="1">
+                     <children>
+                        <Pane fx:id="col1" prefHeight="296.0" prefWidth="85.71" />
+                        <Pane fx:id="col2" prefHeight="296.0" prefWidth="85.71" />
+                        <Pane fx:id="col3" prefHeight="296.0" prefWidth="85.71" />
+                        <Pane fx:id="col4" prefHeight="296.0" prefWidth="85.71" />
+                        <Pane fx:id="col5" prefHeight="296.0" prefWidth="85.71" />
+                        <Pane fx:id="col6" prefHeight="296.0" prefWidth="85.71" />
+                        <Pane fx:id="col7" prefHeight="296.0" prefWidth="85.71" />
+                     </children>
+                  </HBox>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
